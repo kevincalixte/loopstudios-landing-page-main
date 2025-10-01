@@ -1,0 +1,143 @@
+.jose{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.darkGrey{
+    color: hsl(0, 0%, 41%);
+}
+
+body{
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.hero{
+    background-image: url("../img/mobile/image-hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 2rem;
+    margin-bottom: 10rem;
+}
+
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22rem;
+}
+
+h1{  
+    color: white;
+    border: 0.15rem solid white;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.VR{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.VR .title, .VR .text{
+    text-align: center;
+}
+
+.VR .title, .creations .title{
+    font-size: 2rem;
+}
+
+.creations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.box{
+    position: relative;
+}
+
+.creations .title{
+    margin-bottom: 3rem;
+}
+
+.creations .boxs .box p{
+    color: white;
+    opacity: 50%;
+    position:absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.creations button{
+    background-color: white;
+    border: 0.15rem solid black;
+    padding: 0.5rem 3rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+footer .logo{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 90%;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer p:last-child{
+    opacity: 50%;
+    margin-bottom: 5rem;
+}
+
+
+@media screen and (min-width: 576px){
+    .box{
+        width: 24%;
+    }
+
+    .boxs{
+        justify-content: space-between;
+    }
+}
