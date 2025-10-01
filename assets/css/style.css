@@ -18,7 +18,8 @@ body {
 }
 
 .hero {
-    background-image: url("../img/mobile/image-hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../img/mobile/image-hero.jpg");
     background-size: cover;
     height: 100vh;
     margin-bottom: 10rem;
@@ -63,6 +64,7 @@ h1 {
     align-items: center;
     gap: 2rem;
     margin: 2rem;
+    position: relative;
 }
 
 .VR .title,
@@ -109,7 +111,7 @@ h1 {
     left: 1rem;
 }
 
-.creations button {
+.creations button{
     background-color: white;
     border: 0.15rem solid black;
     padding: 0.5rem 3rem;
@@ -175,8 +177,67 @@ footer p:last-child {
     }
 
     .hero {
-        background-image: url("../img/desktop/image-hero.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url("../img/desktop/image-hero.jpg");
+        padding: 1rem 5rem;
     }
+
+    h1 {
+        /* white-space: normal;  */
+        width: 50%;
+    }
+
+    .VR {
+        flex-direction: row;
+        display: block;
+        /* position: relative; */
+
+    }
+
+    .VR img {
+        margin: 0 5rem;
+
+    }
+
+    .VR-text {
+        position: absolute;
+        bottom: 0;
+        right: 5rem;
+        background-color: white;
+        width: 40%;
+        padding: 3rem;
+        height: 12rem;
+    }
+
+    .creations {
+        align-items: start;
+        margin: 7rem;
+        outline: 2px solid red
+    }
+
+    .theButton{
+        order:-1;
+    }
+
+    .creations .boxs .box img {
+        outline: 2px solid blue;
+    }
+
+    /*  */
+
+    footer {
+        /* flex-direction: row; */
+    }
+
+    footer nav {
+        /* flex-direction: row; */
+        /* align-items: start; */
+    }
+
+    .socials, footer p{
+        /* align-items: end; */
+    }
+  
 
 
 }
