@@ -1,45 +1,62 @@
-.jose{
+.jose {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
 
-.darkGrey{
+.darkGrey {
     color: hsl(0, 0%, 41%);
 }
 
-body{
+body {
     font-family: 'Alata', sans-serif;
     font-weight: 400;
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
 
-.hero{
+.hero {
     background-image: url("../img/mobile/image-hero.jpg");
     background-size: cover;
     height: 100vh;
-    padding: 2rem;
     margin-bottom: 10rem;
 }
 
-.hero nav{
+.hero nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 22rem;
+    margin-bottom: 13rem;
+    padding: 2rem;
+    align-items: center;
 }
 
-h1{  
+h1 {
     color: white;
     border: 0.15rem solid white;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 300;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin: 2rem;
+    white-space: pre-line;
 }
 
-.VR{
+.burger {
+    display: flex;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.menu {
+    color: white;
+    display: none;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+.VR {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,52 +65,60 @@ h1{
     margin: 2rem;
 }
 
-.VR .title, .VR .text{
+.VR .title,
+.VR .text {
     text-align: center;
 }
 
-.VR .title, .creations .title{
+.VR .title,
+.creations .title {
     font-size: 2rem;
 }
 
-.creations{
+.creations {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem;
 }
 
-.boxs{
+.boxs {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.box{
+.box {
     position: relative;
 }
 
-.creations .title{
+.boxs .box p {
+    white-space: pre-line;
+
+}
+
+.creations .title {
     margin-bottom: 3rem;
 }
 
-.creations .boxs .box p{
+.creations .boxs .box p {
     color: white;
-    opacity: 50%;
-    position:absolute;
+    opacity: 70%;
+    position: absolute;
     bottom: 1rem;
     left: 1rem;
 }
 
-.creations button{
+.creations button {
     background-color: white;
     border: 0.15rem solid black;
     padding: 0.5rem 3rem;
     margin: 0 auto;
+    margin-top: 1rem;
     margin-bottom: 5rem;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -101,43 +126,57 @@ footer{
     align-items: center;
 }
 
-footer .logo{
+footer .logo {
     margin-top: 4rem;
     margin-bottom: 3rem;
 }
 
-footer nav{
+footer nav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     opacity: 90%;
 }
 
-footer nav{
+footer nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2.5rem;
 }
 
-.socials{
+.socials {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
-footer p:last-child{
+footer p:last-child {
     opacity: 50%;
     margin-bottom: 5rem;
 }
 
 
-@media screen and (min-width: 576px){
-    .box{
+@media screen and (min-width: 576px) {
+    .box {
         width: 24%;
     }
 
-    .boxs{
+    .boxs {
         justify-content: space-between;
     }
+
+    .menu {
+        display: flex;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .hero {
+        background-image: url("../img/desktop/image-hero.jpg");
+    }
+
+
 }
